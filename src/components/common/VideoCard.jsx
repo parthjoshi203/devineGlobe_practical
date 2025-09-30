@@ -49,9 +49,9 @@ const VideoCard = React.memo(({ video, onEdit, onDelete }) => {
           <h3 className="text-lg font-semibold text-gray-900 truncate">
             {video.title}
           </h3>
-          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 ml-2 flex-shrink-0">
+          {/* <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800 ml-2 flex-shrink-0">
             {video.category}
-          </span>
+          </span> */}
         </div>
 
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">

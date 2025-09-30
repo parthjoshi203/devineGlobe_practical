@@ -25,7 +25,6 @@ export const productValidationSchema = Yup.object({
     .positive("Price must be positive")
     .max(10000, "Price must not exceed $10,000")
     .typeError("Price must be a valid number"),
-  category: Yup.string().required("Category is required"),
   image: Yup.mixed().nullable(),
 });
 
@@ -38,7 +37,6 @@ export const videoValidationSchema = Yup.object({
     .required("Description is required")
     .min(10, "Description must be at least 10 characters")
     .max(500, "Description must not exceed 500 characters"),
-  category: Yup.string().required("Category is required"),
   youtubeUrl: Yup.string()
     .required("YouTube URL is required")
     .url("Please enter a valid URL")
