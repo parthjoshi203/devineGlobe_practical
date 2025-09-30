@@ -5,7 +5,8 @@ import { selectIsAuthenticated } from "../../store/slices/authSlice";
 
 const PublicRoute = ({ children }) => {
   const isAuthenticated = useSelector(selectIsAuthenticated);
-  return !isAuthenticated ? children : <Navigate to="/login" replace />;
+  console.log("isa", isAuthenticated);
+  return !isAuthenticated ? children : <Navigate to="/" replace />;
 };
 
 export default PublicRoute;
