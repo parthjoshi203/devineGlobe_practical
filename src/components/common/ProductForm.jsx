@@ -246,37 +246,6 @@ const ProductForm = React.memo(
               />
             </div>
 
-            <div>
-              <label
-                htmlFor="category"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
-                Category *
-              </label>
-              <Field
-                as="select"
-                id="category"
-                name="category"
-                className={`block w-full px-3 py-2 rounded-md border ${
-                  errors.category && touched.category
-                    ? "border-red-300 focus:ring-red-500 focus:border-red-500"
-                    : "border-gray-300 focus:ring-blue-500 focus:border-blue-500"
-                } focus:outline-none focus:ring-2 transition-colors`}
-              >
-                <option value="">Select a category</option>
-                {categories.map((category) => (
-                  <option key={category} value={category}>
-                    {category}
-                  </option>
-                ))}
-              </Field>
-              <ErrorMessage
-                name="category"
-                component="div"
-                className="mt-1 text-sm text-red-600"
-              />
-            </div>
-
             <div className="flex justify-end space-x-3 pt-4">
               <button
                 type="button"
