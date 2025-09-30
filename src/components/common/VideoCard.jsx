@@ -12,9 +12,6 @@ const VideoCard = React.memo(({ video, onEdit, onDelete }) => {
 
   const videoId = extractYouTubeId(video.youtubeUrl);
   const embedUrl = videoId ? `https://www.youtube.com/embed/${videoId}` : null;
-  const thumbnailUrl = videoId
-    ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
-    : null;
 
   return (
     <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">

@@ -1,5 +1,3 @@
-export const AUTH_TOKEN_KEY = "authToken";
-
 export const FAKE_LOGIN_CREDENTIALS = {
   username: "admin",
   password: "password123",
